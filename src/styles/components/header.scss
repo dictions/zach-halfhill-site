@@ -14,6 +14,13 @@
 	transform: rotate(-5deg);
 }
 
+.header__info {
+	@media (min-width: $breakpoint-medium) {
+		margin-left:  $grid-gutter / -2;
+		margin-right: $grid-gutter / -2;
+	}
+}
+
 .header__nav {
 	text-align: right;
 }
