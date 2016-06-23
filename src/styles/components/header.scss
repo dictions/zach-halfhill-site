@@ -24,3 +24,14 @@
 .header__nav {
 	text-align: right;
 }
+
+.header__logotype {
+	text-align: right;
+
+	img {
+		display: none;
+		&.visible {
+			display: inline-block;;
+		}
+	}
+}

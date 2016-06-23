@@ -127,12 +127,14 @@ $all-breakpoints : (
 .item-grid__column {
 	padding-bottom: $grid-gutter / 2;
 
+	@media (min-width: $breakpoint-medium) {
+		padding-bottom: 0;
+	}
+}
+
+.item-grid__column--flush {
 	@media (max-width: $breakpoint-medium - 1px) {
 		padding-left: 0;
 		padding-right: 0;
-	}
-
-	@media (min-width: $breakpoint-medium) {
-		padding-bottom: 0;
 	}
 }
