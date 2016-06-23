@@ -1,0 +1,29 @@
+{
+  "name": "zach-halfhill-website",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node webpack/devserver",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:monomono/zach-halfhill-website.git"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.5",
+    "eslint": "^2.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^3.2.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  }
+}
