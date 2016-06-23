@@ -1,0 +1,19 @@
+.header__container {
+	margin-top: $grid-gutter / 2;
+
+	@media (min-width: $breakpoint-medium) {
+		margin-top: $grid-gutter;
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		margin-top: $grid-gutter * 2;
+	}
+}
+
+.header__rotate {
+	transform: rotate(-5deg);
+}
+
+.header__nav {
+	text-align: right;
+}

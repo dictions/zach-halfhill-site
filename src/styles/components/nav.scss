@@ -1,0 +1,90 @@
+.nav-header {
+	text-transform: uppercase;
+}
+
+.nav-pos-top,
+.nav-pos-bottom,
+.nav-pos-left,
+.nav-pos-right {
+
+	@media (min-width: $breakpoint-medium) {
+		position: fixed;
+		text-align: center;
+		//display: block;
+		width: 50px;
+		height: 50px;
+		white-space: nowrap;
+
+		.nav-pos__text {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+.nav-pos-top {
+	top: 26px;
+	@media (min-width: $breakpoint-medium) {
+		top: 36px;
+	}
+	@media (min-width: $breakpoint-large) {
+		top: 64px;
+	}
+
+	.nav-pos__text {
+		top: 0;
+	}
+}
+.nav-pos-bottom {
+	bottom: 26px;
+	@media (min-width: $breakpoint-medium) {
+		bottom: 36px;
+	}
+	@media (min-width: $breakpoint-large) {
+		bottom: 64px;
+	}
+
+	.nav-pos__text {
+		bottom: 0;
+	}
+}
+.nav-pos-left {
+	left: 26px;
+	@media (min-width: $breakpoint-medium) {
+		left: 36px;
+	}
+	@media (min-width: $breakpoint-large) {
+		left: 64px;
+	}
+}
+.nav-pos-right {
+	right: 26px;
+	@media (min-width: $breakpoint-medium) {
+		right: 36px;
+	}
+	@media (min-width: $breakpoint-large) {
+		right: 64px;
+	}
+}
+
+.nav-pos-top.nav-pos-left {
+	@media (min-width: $breakpoint-medium) {
+		transform: rotate(-45deg);
+	}
+}
+.nav-pos-top.nav-pos-right {
+	@media (min-width: $breakpoint-medium) {
+		transform: rotate(45deg);
+	}
+}
+.nav-pos-bottom.nav-pos-left {
+	@media (min-width: $breakpoint-medium) {
+		transform: rotate(45deg);
+	}
+}
+.nav-pos-bottom.nav-pos-right {
+	@media (min-width: $breakpoint-medium) {
+		transform: rotate(-45deg);
+	}
+}
