@@ -11,8 +11,8 @@ module.exports = {
 		'main': './main.js'
 	},
 	output: {
-		path: path.resolve(ROOT_DIR, 'build', 'assets'),
-		publicPath: '/assets/',
+		path: path.resolve(ROOT_DIR, 'dist'),
+		publicPath: '/dist/',
 		filename: '[name].js'
 	},
 	module: {
@@ -31,10 +31,7 @@ module.exports = {
 		]
 	},
 	resolve: {
-		extensions: ['', '.js'],
-		alias: {
-			//'components': path.resolve(ROOT_DIR, 'src', 'components'),
-		}
+		extensions: ['', '.js']
 	},
 	plugins: [
 		// External CSS File
