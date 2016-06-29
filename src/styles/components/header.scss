@@ -40,3 +40,13 @@ body {
 		}
 	}
 }
+
+.header__logotype-placeholder {
+	height: 0;
+	padding-bottom: 140 / 180 * 100%;
+	display: none;
+
+	&.visible {
+		display: inline-block;
+	}
+}

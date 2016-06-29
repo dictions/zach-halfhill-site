@@ -18,10 +18,10 @@
 								<nav class="social-nav__container">
 									<label class="social-nav__label">Social</label>
 									<ul class="social-nav__links">
-										<li class="social-nav__link"><a href="https://twitter.com/hlfhll"><img src="assets/bird.png"/></a></li>
-										<li class="social-nav__link"><a href="https://www.instagram.com/GuerillaBizkit/"><img src="assets/camera.png"/></a></li>
-										<li class="social-nav__link"><a href="https://dribbble.com/zachhalfhill"><img src="assets/ball.png"/></a></li>
-										<li class="social-nav__link"><a href="https://www.linkedin.com/in/zach-halfhill-6a964989"><img src="assets/briefcase.png"/></a></li>
+										<li class="social-nav__link"><a title="twitter" href="https://twitter.com/hlfhll"><img src="assets/bird.png"/></a></li>
+										<li class="social-nav__link"><a title="instagram" href="https://www.instagram.com/GuerillaBizkit/"><img src="assets/camera.png"/></a></li>
+										<li class="social-nav__link"><a title="dribbble" href="https://dribbble.com/zachhalfhill"><img src="assets/ball.png"/></a></li>
+										<li class="social-nav__link"><a title="linkedin" href="https://www.linkedin.com/in/zach-halfhill-6a964989"><img src="assets/briefcase.png"/></a></li>
 									</ul>
 								</nav>
 							</span>
@@ -43,11 +43,19 @@
 						</li>
 					</ul>
 					<div class="header__logotype header__rotate grid__col grid__col--8 grid__col--large-6">
-						<img class="header__logotype-img visible" src="assets/lockup-1.svg"/>
+						<div class="header__logotype-placeholder visible"></div>
+						<img class="header__logotype-img" src="assets/lockup-1.svg"/>
 						<img class="header__logotype-img" src="assets/lockup-2.svg"/>
 						<img class="header__logotype-img" src="assets/lockup-3.svg"/>
 						<img class="header__logotype-img" src="assets/lockup-4.svg"/>
 						<img class="header__logotype-img" src="assets/lockup-5.svg"/>
+						<script>
+							var placeholder = document.querySelector('.header__logotype-placeholder');
+							var logos = [].slice.call(document.querySelectorAll('.header__logotype-img'));
+							var index = Math.floor(Math.random() * logos.length);
+							logos[index].classList.add('visible');
+							placeholder.classList.remove('visible');
+						</script>
 					</div>
 				</div>
 			</div>
