@@ -47,9 +47,40 @@ a {
 		background: #ffff00;
 		z-index: -1;
 		opacity: 0.6;
+		animation: rainbow 6s linear infinite;
 	}
 
 	&:hover:before {
 		opacity: 1;
+	}
+}
+
+@keyframes rainbow {
+	0% {
+		background: #ffff00;
+	}
+
+	25% {
+		background: #ff0000;
+	}
+
+	37% {
+		background: #f300ff;
+	}
+
+	50% {
+		background: #0000ff;
+	}
+
+	66% {
+		background: #00ffff;
+	}
+
+	75% {
+		background: #00ff3f;
+	}
+
+	100% {
+		background: #ffff00;
 	}
 }
