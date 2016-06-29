@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node webpack/devserver",
-    "deploy": "NODE_ENV=production webpack"
+    "deploy": "NODE_ENV=production webpack && gulp deploy"
   },
   "repository": {
     "type": "git",
@@ -12,6 +12,8 @@
   "devDependencies": {
     "babel-eslint": "^6.0.5",
     "eslint": "^2.13.1",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
