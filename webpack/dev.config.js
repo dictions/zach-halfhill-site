@@ -16,8 +16,8 @@ module.exports = {
 		'main': DEV_SERVER.concat(['./main.js']),
 	},
 	output: {
-		path: path.resolve(ROOT_DIR, 'dist'),
-		publicPath: 'dist/',
+		path: path.resolve(ROOT_DIR, 'dist', 'assets'),
+		publicPath: '/assets/',
 		filename: '[name].js'
 	},
 	module: {

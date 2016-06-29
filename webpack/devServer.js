@@ -7,7 +7,7 @@ var ROOT_DIR = path.resolve(__dirname, '../');
 
 new WebpackDevServer(webpack(webpackConfig), {
 	// public directory for dev server
-	contentBase: path.resolve(ROOT_DIR),
+	contentBase: path.resolve(ROOT_DIR, 'src', 'public'),
 	publicPath: webpackConfig.output.publicPath,
 	// hot reload
 	hot: true,

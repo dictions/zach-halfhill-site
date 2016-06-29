@@ -88,3 +88,36 @@
 		transform: rotate(-45deg);
 	}
 }
+
+.social-nav__links,
+.social-nav__link,
+.social-nav__link img {
+	display: inline-block;
+}
+
+.social-nav__link img {
+	height: 1em;
+	width: auto;
+}
+
+.social-nav__label {
+	display: none;
+}
+
+@media (min-width: $breakpoint-medium) {
+	.social-nav__links {
+		display: none;
+	}
+	.social-nav__label {
+		display: inline-block;
+	}
+
+	.social-nav__container:hover {
+		.social-nav__label {
+			display: none;
+		}
+		.social-nav__links {
+			display: inline;
+		}
+	}
+}
