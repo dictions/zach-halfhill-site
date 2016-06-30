@@ -62,20 +62,6 @@
 						<img class="header__logotype-img" data-src="assets/lockup-3.svg"/>
 						<img class="header__logotype-img" data-src="assets/lockup-4.svg"/>
 						<img class="header__logotype-img" data-src="assets/lockup-5.svg"/>
-						<script>
-							var placeholder = document.querySelector('.header__logotype-placeholder');
-							var logos = document.querySelectorAll('.header__logotype-img');
-							var index = Math.floor(Math.random() * logos.length);
-
-							var currentLogo = logos[index];
-
-							currentLogo.onload = function() {
-								currentLogo.classList.add('visible');
-								placeholder.classList.remove('visible');
-							};
-
-							currentLogo.src = currentLogo.dataset.src;
-						</script>
 					</div>
 				</div>
 			</div>
