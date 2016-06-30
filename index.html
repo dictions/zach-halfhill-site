@@ -5,6 +5,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ZACH HALFHILL</title>
+
+	<style>
+		/* Above the head styles */
+		.header__logotype-placeholder {
+			height: 0;
+			padding-bottom: 140 / 180 * 100%;
+			display: none;
+		}
+		.header__logotype-placeholder.visible {
+			display: inline-block;
+		}
+	</style>
+
 	<link rel="stylesheet" href="assets/main.css" />
 </head>
 <body>
@@ -51,7 +64,7 @@
 						<img class="header__logotype-img" src="assets/lockup-5.svg"/>
 						<script>
 							var placeholder = document.querySelector('.header__logotype-placeholder');
-							var logos = [].slice.call(document.querySelectorAll('.header__logotype-img'));
+							var logos = document.querySelectorAll('.header__logotype-img');
 							var index = Math.floor(Math.random() * logos.length);
 							logos[index].classList.add('visible');
 							placeholder.classList.remove('visible');
