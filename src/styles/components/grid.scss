@@ -103,6 +103,7 @@ $all-breakpoints : (
 	}
 
 	@media (min-width: $breakpoint-large) {
+		max-width: 1000px;
 		padding-left: 0;
 		padding-right: 0;
 	}
