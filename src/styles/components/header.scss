@@ -1,17 +1,9 @@
 .header__container {
 	margin-top: $grid-gutter;
-
-	@media (min-width: $breakpoint-medium) {
-		margin-top: $grid-gutter;
-	}
-
-	@media (min-width: $breakpoint-medium) {
-		margin-top: $grid-gutter * 2;
-	}
 }
 
 /* Compensate for rotation */
-body {
+html, body {
 	overflow-x: hidden;
 }
 
