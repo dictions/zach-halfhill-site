@@ -112,7 +112,8 @@
 		display: inline-block;
 	}
 
-	.social-nav__container:hover {
+	.social-nav__container:hover,
+	.touch-browser {
 		.social-nav__label {
 			display: none;
 		}

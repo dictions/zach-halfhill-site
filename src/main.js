@@ -34,3 +34,8 @@ currentLogo.onload = () => {
 };
 
 currentLogo.src = currentLogo.dataset.src;
+
+// Mobile social classes
+if ('ontouchstart' in document.documentElement) {
+	document.body.classList.add('touch-browser');
+}
