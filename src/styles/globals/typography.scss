@@ -21,6 +21,13 @@ a {
 	text-decoration: none;
 }
 
+.text-center-small {
+	text-align: center;
+	@media (min-width: $breakpoint-xlarge) {
+		text-align: left;
+	}
+}
+
 .link-underline {
 	border-bottom: 1px solid;
 }
