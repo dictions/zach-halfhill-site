@@ -19,6 +19,13 @@ body {
 a {
 	color: inherit;
 	text-decoration: none;
+	
+	img {
+		display: inline;
+		height: 1em;
+		width: auto;
+		vertical-align: -4px;
+	}
 }
 
 .text-center-small {
@@ -37,11 +44,17 @@ a {
 	margin-bottom: -1px;
 }
 
+.link--block {
+	display: inline-block;
+}
+
 .link--cta {
 	position: relative;
 	border: 2px solid;
-	padding: 2px 4px;
+	padding: 0px 4px;
 	font-weight: 700;
+	line-height: 1.5em;
+	display: inline-block;
 
 	&:before {
 		content: '';
@@ -89,5 +102,45 @@ a {
 
 	100% {
 		background: #ffff00;
+	}
+}
+
+.shop-link {
+	position: relative;
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: auto;
+	
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	
+	.shop-link__text {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		font-size: 2rem;
+		transform: translateY(-50%);
+		text-decoration: underline;
+		color: blue;
+		animation: blink 1000ms steps(1) infinite;
+		
+		@media (min-width: $breakpoint-medium) {
+			font-size: 4rem;
+		}
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
 	}
 }
