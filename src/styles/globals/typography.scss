@@ -129,6 +129,12 @@ a {
 		color: blue;
 		animation: blink 1000ms steps(1) infinite;
 		
+		img {
+			width: initial;
+			height: initial;
+			display: inline-block;
+		}
+		
 		@media (min-width: $breakpoint-medium) {
 			font-size: 4rem;
 		}
